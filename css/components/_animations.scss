@@ -1,0 +1,245 @@
+//Animations of the project
+
+//=====================================================
+//============== INTRODUCTION ANIMATIONS ==============
+//=====================================================
+
+.logo-svg-intro{
+    animation: logo-intro-animation 5s  ease ;
+    transform-box: fill-box;
+}
+
+@keyframes logo-intro-animation{
+    0%{
+        stroke-dasharray: 0 32;
+        fill-opacity: 0;
+    }
+    50%{
+        stroke-dasharray: 32 0;
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-dasharray: 32 0;
+        fill-opacity: 1;
+    }
+}
+
+
+.name-intro{
+    animation: name-intro-animation 2s 3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes name-intro-animation{
+    0%{
+        opacity: 0;
+        
+    }
+    30%, 80%{
+        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+//=====================================================
+//=============== HEADER LOGO ANIMATION ===============
+//=====================================================
+
+.logo-svg{
+    animation: logo 16s ease infinite;
+    transform-box: fill-box;
+    opacity: 0;
+}
+
+@keyframes logo{
+    0%{
+        stroke-dasharray: 1 48;
+        stroke-dashoffset: 0;
+        opacity: 0;
+        fill-opacity: 0;
+    }
+    15%,85%{
+        stroke-dasharray: 48 0;
+        stroke-dashoffset: 48;
+        opacity: 1;
+        fill-opacity: 1;
+    }
+    100%{
+        stroke-dasharray: 1 48;
+        stroke-dashoffset: 0;
+        opacity: 0;
+        fill-opacity: 0;
+    }
+}
+
+//=====================================================
+//============== SECTION HERO ANIMATIONS ==============
+//=====================================================
+.circle-hero-1{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: circle-hero-move 20s ease infinite alternate;
+}
+.circle-hero-2{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: circle-hero-move 20s ease .5s infinite alternate;
+}
+.circle-hero-3{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: circle-hero-move 20s ease 1s infinite alternate;
+}
+
+@keyframes circle-hero-move{
+    0%{
+        transform: translate3d(0px,0px,0px) rotate(0deg);
+    }
+    20%{
+        transform: translate3d(-20px, -80px, 0px) rotate(0deg);
+    }
+    40%,60%{
+        transform: translate3d(-20px, -0px, 0px) rotate(360deg);
+    }
+    80%{
+        transform: translate3d(-20px, -80px, 0px) rotate(0deg);
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }  
+}
+
+//=====================================================
+//============= SECTION WORKS ANIMATIONS ==============
+//=====================================================
+
+.html-5, 
+.css-3, 
+.sass-icon, 
+.js-j,
+.js-s, 
+.react-icon,
+.github-icon,
+.linkedin-icon,
+.dribble-icon{
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: works-icons 5s ease 1 forwards;
+}
+
+@keyframes works-icons{
+    0%{
+        stroke-dasharray: 0 128;
+        fill-opacity: 0;
+    }
+    50%{
+        stroke-dasharray: 128 0;
+        fill-opacity: 0;
+    }
+    90%,100%{
+        stroke-dasharray: 128 0;
+        fill-opacity: 1;
+        stroke-width: 0;
+    }
+}
+
+.card{
+    animation: rotate-card 3s ease infinite alternate;
+}
+
+@keyframes rotate-card{
+    0%{
+        transform: rotateX(10deg) rotateY(-10deg) rotate(-10deg) translate3d(0,0,50px);
+    }
+
+    100%{
+        transform: rotateX(-10deg) rotateY(10deg) rotate(10deg) translate3d(0,0,50px);
+    }
+
+}
+
+.icon-mobile{
+    animation: card-move 2s ease infinite alternate;
+}
+.icon-card{
+    animation: card-move 2s ease .5s infinite alternate;
+}
+.icon-contactless{
+    animation: card-move 2s ease 1s infinite alternate;
+}
+
+@keyframes card-move{
+    0%{
+        transform: translate3d(0,0,75px);
+    }
+    100%{
+        transform: translate3d(-15px,15px,75px);
+    }
+}
+
+
+//=====================================================
+//============ SECTION CONTACT ANIMATIONS =============
+//=====================================================
+
+.square-1{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: square-1-rotate 16s .5s ease infinite alternate;
+}
+
+@keyframes square-1-rotate{
+    0%{
+        transform: translate3d(0,0,0) rotate(0) rotateY(0) rotateX(0);
+    }
+    100%{
+        transform: translate3d(520px,250px,0) rotate(270deg) rotateY(0deg) rotateX(360deg) ;
+    }
+}
+
+.square-2{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: square-2-rotate 16s 1s ease infinite alternate;
+}
+
+@keyframes square-2-rotate{
+    0%{
+        transform: translate3d(0,0,0) rotate(0) rotateY(0) rotateX(0);
+    }
+    100%{
+        transform: translate3d(450px,-280px,0) rotate(220deg) rotateY(360deg) rotateX(0deg) ;
+    }
+}
+
+.square-3{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: square-3-rotate 16s 1.5s ease infinite alternate;
+}
+
+@keyframes square-3-rotate{
+    0%{
+        transform: translate3d(0,0,0) rotate(0) rotateY(0) rotateX(0);
+    }
+    100%{
+        transform: translate3d(-450px,-240px,0) rotate(-45deg) rotateY(0deg) rotateX(360deg) ;
+    }
+}
+
+.square-4{
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: square-4-rotate 16s 2s ease infinite alternate;
+}
+
+@keyframes square-4-rotate{
+    0%{
+        transform: translate3d(0,0,0) rotate(0) rotateY(0) rotateX(0);
+    }
+    100%{
+        transform: translate3d(-500px,220px,0) rotate(270deg) rotateY(0deg) rotateX(360deg) ;
+    }
+}

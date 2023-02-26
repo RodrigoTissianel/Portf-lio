@@ -1,0 +1,82 @@
+a{
+    cursor: pointer;
+    display: inline-block;
+    color: $white-normal;
+    text-decoration: none;
+    transition: .5s ease;
+    @include typeface-2(p2, desktop);
+
+    &:hover{
+        opacity: .7;
+    }
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px 16px;
+    color: $grey-4;
+    background-color: rgba(18, 22, 26, 1);
+    @include typeface-2(p2, desktop);
+    border: 0;
+    border-radius: 12px;
+    transition: .5s ease;
+    outline: 0;
+}
+textarea{
+    resize: none;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 24px;
+    background: linear-gradient(225deg, #2781DB 0%, #093E74 100%);
+    color: $white-light;
+    border: 0;
+    border-radius: 8px;
+    @include typeface-2(p2,desktop);
+    transition: .5s ease;
+
+    &:hover{
+        opacity: .75;
+    }
+}
+
+.link{
+    display: inline-block;
+    padding: 16px 16px 16px 40px;
+    position: relative;
+    color: $primary-normal;
+    background-image: url("../svg/arrow.svg");
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+
+    @include typeface-1(h5, desktop);
+    @include responsive(s){
+        @include typeface-1(h5, mobile);
+    }
+ 
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 48px;
+        width: 0%;
+        height: 2px;
+        border: 0;
+        border-radius: 1px;
+        transition: .5s ease;
+        background-color: $secondary-normal;
+    }
+
+    &:hover{
+        opacity: .7;
+        padding-left: 64px;
+        background-position: 16px 50%;
+
+        &::after{
+            width: 80%;
+        }
+    }
+}

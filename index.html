@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400&family=Saira:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="svg/logo.svg">
+    <script src="js/svg-inject-min.js"></script>
+    <title>Rodrigo Tissianel</title>
+</head>
+<body>
+
+     <!--=====================================
+        ===========  INTRODUCTION ============
+        ====================================== -->
+     <section class="introduction">
+            <img src="svg/logo.svg" class="logo-svg-intro" alt="" onload="SVGInject(this)">
+            <h5 class="name-intro text-white mt-3">Rodrigo Tissianel</h5>
+        </section>
+
+    <!--=====================================
+        ============== HEADER ===============
+        ===================================== -->
+     <header id="header">
+
+        <!--==========  NAV DESKTOP ==========-->
+        <nav class="navbar-desktop">
+
+            <!--==========  NAV DESKTOP-ITEM-1 ==========-->
+            <div class="nav-desktop-item-1">
+                <ul class="menu-desktop">
+                    <li class="menu-item-desktop nav-left-item">
+                        <a href="#hero" class="menu-desktop-link">Home</a>
+                    </li>
+                    <li class="menu-item-desktop nav-left-item">
+                        <a href="#about" class="menu-desktop-link">About</a>
+                    </li>
+                    <li class="menu-item-desktop nav-left-item">
+                        <a href="#works" class="menu-desktop-link">Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--==========  LOGO ==========-->
+            <div class="logo">
+                <a href="#hero">
+                    <img src="svg/logo.svg" class="logo-svg" alt="" onload="SVGInject(this)">
+                </a>
+            </div>
+
+            <!--==========  NAV-DESKTOP-ITEM-2 ==========-->
+            <div class="nav-desktop-item-2">
+                <ul class="menu-desktop">
+                    <li class="menu-item-desktop nav-right-item">
+                        <a href="#contact" class="menu-desktop-link">Contact</a>
+                    </li>
+                    <li class="menu-item-desktop nav-right-item">
+                        <a href="pdf/Resume_Rodrigo.pdf" class="menu-desktop-link" target="_blank">Resumé</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+
+     <!--=====================================
+        ===========  SECTION HERO ============
+        ====================================== -->
+     <main>
+        <section class="container shadows-hero" id="hero">
+            
+            <div class="row">
+                <div class="grid-6 mt-8 greeting">
+                    <h5 class="text-blue">Hey! Nice to meet you, I'm</h5>
+                    <h1 class="name my-2 h0">Rodrigo</h1>
+                    <h1 class="surname ml-11 h0">Tissianel</h1>
+                    <h3 class="ml-11 mt-4 text-gradient">Front-end developer</h3>
+                </div>
+
+                <div class="grid-6 flex-center hero-svg">
+                    <img src="svg/svg-hero.svg" alt="" class="w-100" onload="SVGInject(this)">
+                </div>
+            </div>
+        </section>
+     </main>
+     
+     <!--=====================================
+        ==========  SECTION WORKS ============
+        ====================================== -->
+     <section class="container " id="works">
+        <h6>My experiences so far</h6>
+        <h3 class="mt-1">Works</h3>
+
+        <div class="row">
+            <div class="grid-5 mt-4" data-aos="fade-up" data-aos-delay="600">
+                <h4 class="text-center color-white-dark">Nubank</h4>
+                <p class="mt-2">The Nubank project is an alternative version of the Nubank webpage, 
+                developed in the FrontPUSH course, with the academic purpose  of practicing 
+                the technologies learned throughout the course. The main idea of this project was 
+                to learn the flexbox layout and the svg manipulation to add animations and also 
+                practice the UI/UX design concepts learned in this course.
+                </p>
+
+                <div class="mt-4 flex-start flex-wrap">
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/html-icon.svg"  class="html-icon" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">HTML5</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/css-icon.svg" class="css-icon" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">CSS3</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/sass-icon.svg" class="icon-sass" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">SASS</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 icons-works">
+                        <img src="svg/js-icon.svg" class="js-icon" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">JSES6+</p>
+                    </div>
+                </div>
+
+                <a href="#" class="mt-6 link"> See project</a>
+            </div>
+            
+            <div class="grid-7 shadows-works " style="height: 560px;" data-aos="fade-up" data-aos-delay="1200">
+                <div class="perspective-wrapper flex-center">
+                    <div class="nubank-page">
+                        <div class="card"></div>
+                        <div class="icon-contactless"></div>
+                        <div class="icon-mobile"></div>
+                        <div class="icon-card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-9">
+            <div class="grid-5" data-aos="fade-up" data-aos-delay="600">
+                <h4 class="text-center color-white-dark">Blog</h4>
+                <p class="mt-2">The Blog project was developed in the FrontPUSH course, 
+                    with the purpose of practicing the technologies learned throughout the course.
+                    The main goal of this project was to learn React JS and it's hooks, 
+                    how to make an API request using Axios and filter the parameters needed from the JSON file
+                    and also learn how to create a repository on github and commit the changes using GIT.
+                </p>
+
+                <div class="mt-4 flex-start flex-wrap">
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/html-icon.svg" class="html-icon" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">HTML5</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/css-icon.svg" class="css-icon" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">CSS3</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/sass-icon.svg" class="icon-sass" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">SASS</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 mr-7 icons-works">
+                        <img src="svg/js-icon.svg" class="js-icon" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">JSES6+</p>
+                    </div>
+
+                    <div class="flex-center-column mt-2 icons-works">
+                        <img src="svg/react-icon.svg" class="icon-react" alt="" onload="SVGInject(this)">
+                        <p class="mt-1 color-white">ReactJS</p>
+                    </div>
+                </div>
+
+                <a href="#" class="mt-6 link">See project</a>
+            </div>
+            
+            <div class="grid-7 shadows-works" style="height: 560px;" data-aos="fade-up" data-aos-delay="1200">
+            <div class="perspective-wrapper flex-center">
+                <div class="blog-page">
+                    <p class="blog-text">blog</p>
+                    <span class="blog-dot"></span>
+                    <div class="blog-logo-1"></div>
+                    <div class="blog-logo-2"></div>
+                </div>
+            </div>
+
+            </div>
+     </section>
+
+     <!--======================================
+        ==========  SECTION ABOUT ============
+        ====================================== -->
+
+     <section id="about" class="container visible">
+        <h6>Me, myself and I</h6>
+        <h3 class="mt-1">About me</h3>
+
+        <div class="row about-container mt-4" >
+            <div class="grid-5 about-me about-shadow flex-start-column w-100">
+                <div class="flex-center-column w-100">
+
+                    <div class="profile">
+                        <img src="img/RT.jpg" class="profile-img" alt="">
+                    </div>
+
+                    <p class="mt-3 w-100">
+                        I'm a front-end developer based in Rio de Janeiro and passionate about technology, Design and Motion.<br>
+                        Graduated as a Control and Automation Engineer and on a carrer transition, I had my first contact 
+                        with the programming world when I was still in university, where I was able to discover and develop
+                        my programming logic and code in languages related to Control and Automation. However, it was after the university
+                        that I discovered the web development and since I've always been interested in Design and creating things from scratch, 
+                        I fell in love with the front-end.<br>
+                        Currently I'm studying and improving my HTML, CSS, SASS, JavaScript and React JS and i'm also familiar with UI Design and Figma.
+                    </p>
+                </div>
+
+                <div class="mt-2">
+                    <a href="https://github.com/RodrigoTissianel" target="_blank" class="mr-2 p-3">
+                        <img src="svg/github-icon.svg" alt="" onload="SVGInject(this)">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rodrigo-tissianel-62780112a/" target="_blank" class="mr-2 p-3">
+                        <img src="svg/linkedin-icon.svg" alt="" onload="SVGInject(this)">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-1 disappear"></div>
+
+            <div class="grid-6 t-shape flex-center w-100" >
+                <div class="">
+                    <div class="led mb-11"></div>
+
+                    <div class="other-skill">
+                        <h6>What i'm learning</h6>
+                        <div class="flex-start mt-3">
+                            <h4 class="h4">Node JS</h4>
+                            <h4 class="ml-11 h4">GSAP</h4>
+                            <h4 class="ml-11 h4">Motion</h4>
+                        </div>
+
+                        <div class="flex-start mt-3">
+                            <h4 class="ml-9 h4">Typescript</h4>
+                            <h4 class="ml-11 h4">UI Design</h4>
+                        </div>
+                    </div>
+
+                    <div class="expertise mt-9">
+                        <h6>My expertise</h6>
+                        <div class="flex-start mt-3">
+                            <h4 class="h4">HTM5</h4>
+                            <h4 class="ml-11 h4">JSES6+</h4>
+                            <h4 class="ml-11 h4">ReactJS</h4>
+                        </div>
+
+                        <div class="flex-start mt-3">
+                            <h4 class="ml-11 h4">CSS3</h4>
+                            <h4 class="ml-11 h4">SASS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!--======================================
+        ==========  SECTION CONTACT ==========
+        ====================================== -->
+
+    
+     <section class="container container-contact shadows-contact" id="contact">
+        <h6>Let's make something great together</h6>
+        <h3 class="mt-1">Contact me</h3>
+        
+        <div class="contact-background" data-aos="fade-up" data-aos-delay="600">
+            <img src="svg/svg-squares.svg" alt="" class="w-100 flex-center" onload="SVGInject(this)">
+        </div>
+
+        <div class="row">
+            <div class="grid-12 flex-center" data-aos="fade-up" data-aos-delay="1200">
+                <div class="mail-container">
+                    <a href="mailto:rodrigotissianel.dev@gmail.com" class="flex-center">
+                        <h4 class="text-gradient text-shadow">hi@rodrigotissianel.com.br</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!--======================================
+        ===============  FOOTER ===============
+        ====================================== -->
+     <footer class="bt-black">
+        <section class="container  py-6">
+            <div class="flex-space flex-wrap">
+                <p>© 2022 Rodrigo Tissianel. All rights reserved</p>
+
+                <div class="flex-start">
+                        <a href="https://github.com/RodrigoTissianel" target="_blank" class="mr-2 p-3">
+                            <img src="svg/github-icon.svg" alt="" onload="SVGInject(this)">
+                        </a>
+                    <a href="https://www.linkedin.com/in/rodrigo-tissianel-62780112a/" target="_blank" class="mr-2 p-3">
+                        <img src="svg/linkedin-icon.svg" alt="" onload="SVGInject(this)">
+                    </a>
+                </div>
+            </div>
+        </section>
+     </footer>
+
+
+
+     <script src="js/smoothScroll-min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="js/vanilla-tilt.min.js"></script>
+     <script src="js/app.js"></script>
+     
+     
+     <script>
+        AOS.init({
+            easing:"ease-out-quart", 
+            duration: 1000, 
+            once: true, 
+        });
+    </script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".perspective-wrapper"), {
+        max: 20,
+        speed: 400
+        });
+    </script>
+</body>
+</html>
