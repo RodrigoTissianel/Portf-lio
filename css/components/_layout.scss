@@ -710,11 +710,13 @@ $gutter: 24px;
 }
 
 .profile{
-  width: 306px;
+  width: 300px;
   height: 300px;
-  border-radius: 150px;
+  border-radius: 50%;
   background: linear-gradient(57.1deg, #0C5FB2 1.38%, #7EB2E5 96.27%);
   padding: 8px;
+  position: relative;
+  z-index: 10;
 
   @include responsive(l){
     width: 256px;
@@ -728,8 +730,13 @@ $gutter: 24px;
 }
 
 .profile-img{
-width: 100%;
+width: 93%;
+height: 93%;
 border-radius: 50%;
+position: absolute;
+top: calc(7%/2);
+left: calc(7%/2);
+z-index: -5;
 }
 
 .led{
