@@ -742,7 +742,7 @@ html {
   top: 96px;
   right: 168px;
   z-index: 3;
-  background-image: url("../svg/blog-1.svg");
+  background-image: url("../svg/Blog-1.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -758,7 +758,7 @@ html {
   top: 150px;
   right: 108px;
   z-index: 2;
-  background-image: url("../svg/blog-2.svg");
+  background-image: url("../svg/Blog-2.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -961,7 +961,7 @@ html {
 }
 @media screen and (max-width: 540px) {
   .contact-background {
-    top: 200px;
+    top: 160px;
     left: -20%;
     width: 140%;
   }

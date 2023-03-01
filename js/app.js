@@ -174,7 +174,6 @@ mm.add({
             trigger: ".led",
             scrub: 1,
             //markers: true,
-            toggleActions: "play reverse none none",
             start: "bottom -15%",
             end: "top -28%"
         }
